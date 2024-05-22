@@ -18,7 +18,7 @@
 				</div>
 				
 				<u1 class="list">
-					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Home</a></li>
 					<li><a href="#">Projects</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact</a></li>
@@ -49,13 +49,34 @@
 			<script>
 				window.SubstackFeedWidget = {
 			    	substackUrl: "jpendas.substack.com",
-			   		posts: 3,
+			   		posts: 2,
 			    	layout: "center",
 			    	hidden: ["author"]
 					  
 				};
 				</script>
 				<script src="https://substackapi.com/embeds/feed.js" async></script>
+
+				    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							        const iframe = document.querySelector('#substack-feed-embed iframe');
+							iframe.onload = function() {
+								          const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+								          const style = iframeDocument.createElement('style');
+								          style.innerHTML = `
+								            .post-class { /* Reemplaza esto con la clase real de los posts */
+											              transition: background-color 0.3s ease;
+											            }
+								            .post-class:hover { /* Reemplaza esto con la clase real de los posts */
+											              background-color: #161616; /* Color gris más oscuro al pasar el ratón */
+											            }
+								          `;
+								          iframeDocument.head.appendChild(style);
+								        
+							};
+							      
+						});
+						    </script>
 
 
 			<h2>
