@@ -41,7 +41,23 @@
 			<h2>
 				Blog:
 			</h2>
-	
+
+			<div class="container">
+				<div id="substack-feed-embed"></div>
+			</div>
+		
+			<script>
+				window.SubstackFeedWidget = {
+			    	substackUrl: "jpendas.substack.com",
+			   		posts: 2,
+			    	layout: "center",
+			    	hidden: ["author"]
+					  
+				};
+				</script>
+				<script src="https://substackapi.com/embeds/feed.js" async></script>
+
+
 			<h2>
 				Contact:
 			</h2>

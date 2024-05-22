@@ -126,7 +126,17 @@ h2{
 	font-size: 20px;
 	color: #161616;
 	margin-left: 15%;
+	margin-bottom: 10px;
 	font-family: Arial;
+	font-style: bold;
 }
 
-
+.container{
+	width: 70%;
+	background-color: #ffffff;
+    border: 5px solid #161616;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-left: 15%; 
+	border-radius: 10px;
+}
