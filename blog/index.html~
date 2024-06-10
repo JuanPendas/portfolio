@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+
+		<nav>
+			<input type="checkbox" id="toggle">
+
+			<div class="logo">
+				<a href="#">
+					<img src="../img\xpi.png" alt="logo" width="50">
+				</a>
+			</div>
+				
+			<u1 class="list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="blog/index.html">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</u1>
+			<label for="toggle" class="icon-bars">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+		</nav>
+ 
+ 	</header>
+    <main>
+        <section>
+            <h1>Blog</h1>
+            <article>
+                <h2><a href="post.html?file=post1.md">Título del Primer Post</a></h2>
+                <p>Resumen del primer post...</p>
+            </article>
+            <article>
+                <h2><a href="post.html?file=post2.md">Título del Segundo Post</a></h2>
+                <p>Resumen del segundo post...</p>
+            </article>
+            <!-- Añade más artículos aquí -->
+        </section>
+    </main>
+	<footer>
+		<p style="font-size:0.8em;">
+		Copyright 2024 JuanPendas license: 
+		<a href="https://creativecommons.org/licenses/by/4.0/">CC BY-SA 4.0</a>
+		</p>
+	</footer>
+</body>
+</html>

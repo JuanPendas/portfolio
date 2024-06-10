@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Juan Pendas </title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styles/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -33,7 +33,11 @@
 		<div class="content">
 			<div class="vContainer">
 				<h1>
-					Juan Pendás			
+					Juan Pendás	
+
+				<p class="par">
+				Electronical engineer & attempt of entrepreneur.
+				</p>
 				</h1>
 			
 			
@@ -41,9 +45,6 @@
 	
 			</div>
 			
-				<p class="par">
-				Electronical engineer & attempt of entrepreneur.
-				</p>
 
 			<h2>
 				Projects:
