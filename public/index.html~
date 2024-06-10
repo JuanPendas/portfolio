@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Juan Pendas </title>
-		<link rel="stylesheet" href="../styles/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Juan Pendas</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="head">
+            <nav>
+                <input type="checkbox" id="toggle">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/xpi.png" alt="logo" width="50">
+                    </a>
+                </div>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <label for="toggle" class="icon-bars">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+            <div class="vContainer">
+                <h1 class="JP">
+                    Juan Pendás
+                    <p class="par">Electronical engineer & attempt of entrepreneur.</p>
+                </h1>
+                <img src="assets/img/ProfilePhoto.png" alt="profile-photo" width="200px" class="Profilephoto">
+            </div>
+            <h2>Projects:</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="SRI.html">
+                        <img src="assets/img/sri.png" alt="SRI" class="card-img">
+                        <div class="card-content">
+                            <h3>Smart Road Infrastructure</h3>
+                            <p>Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
+                        </div>
+                    </a>
+                </div>
 
-	<body>
-		<div class="head">
-			<nav>
-				<input type="checkbox" id="toggle">
+                <div class="card">
+                    <a href="SRI.html">
+                        <img src="assets/img/sri.png" alt="SRI" class="card-img">
+                        <div class="card-content">
+                            <h3>Smart Road Infrastructure</h3>
+                            <p>Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
+                        </div>
+                    </a>
+                </div>
 
-				<div class="logo">
-					<a href="#">
-						<img src="..\img\xpi.png" alt="logo" width="50">
-					</a>
-				</div>
+               	<div class="card">
+                    <a href="SRI.html">
+                       	<img src="assets/img/sri.png" alt="SRI" class="card-img">
+                       	<div class="card-content">
+                            <h3>Smart Road Infrastructure</h3>
+                            <p>Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
+                        </div>
+                    </a>
+           		 </div>
+            </div>
+
+            <h2>Blog:</h2>
+            <h2>Contact:</h2>
+			
+			<div class="contactForm">
+				<form action="">
+					<p>
+						<label>Name</label>
+						<input type="text" name="Name">
+					</p>
 				
-				<u1 class="list">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</u1>
-				<label for="toggle" class="icon-bars">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-			</nav>
-	
-		<div class="content">
-			<div class="vContainer">
-				<h1>
-					Juan Pendás	
+					<p>
+						<label>Email</label>
+						<input type="email" name="Email">
+					</p>
+				
+					<p class="block">
+						<label>Message</label>
+						<input type="text" name="Message">
+					</p>
 
-				<p class="par">
-				Electronical engineer & attempt of entrepreneur.
-				</p>
-				</h1>
-			
-			
-				<img src="img\ProfilePhoto.png" alt="profile-photo" width="200px" class="Profilephoto">
-	
-			</div>
-			
+					<p class="block">
+						<button type="submit">
+							Send
+						</button>
+					</p>
+				</form>
+				
+        	</div>
 
-			<h2>
-				Projects:
-			</h2>
-
-			<h2>
-				Blog:
-			</h2>
-
-			<div class="container">
-				<div id="substack-feed-embed"></div>
-			</div>
-		
-			<script>
-				window.SubstackFeedWidget = {
-			    	substackUrl: "jpendas.substack.com",
-			   		posts: 2,
-			    	layout: "right",
-			    	hidden: ["author"]
-					  
-				};
-				</script>
-				<script src="https://substackapi.com/embeds/feed.js" async></script>
-
-
-			<h2>
-				Contact:
-			</h2>
-		</div>
-
-		<footer>
-			<p style="font-size:0.8em;">
-			Copyright 2024 JuanPendas license: 
-			<a href="https://creativecommons.org/licenses/by/4.0/">CC BY-SA 4.0</a>
-			</p>
-		</footer>
-	</body>
+        <footer>
+            <p style="font-size:0.8em;">Copyright 2024 JuanPendas license:
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-SA 4.0</a>
+            </p>
+        </footer>
+    </body>
 </html>
