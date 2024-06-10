@@ -14,12 +14,12 @@
 
 			<div class="logo">
 				<a href="#">
-					<img src="../img\xpi.png" alt="logo" width="50">
+					<img src="..\img\xpi.png" alt="logo" width="50">
 				</a>
 			</div>
 				
 			<u1 class="list">
-				<li><a href="../index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">Blog</a></li>
 				<li><a href="#">Contact</a></li>
@@ -31,20 +31,33 @@
 		</nav>
  
  	</header>
-    <main>
-        <section>
-            <h1>Blog</h1>
-            <article>
-                <h2><a href="post.html?file=post1.md">Título del Primer Post</a></h2>
-                <p>Resumen del primer post...</p>
-            </article>
-            <article>
-                <h2><a href="post.html?file=post2.md">Título del Segundo Post</a></h2>
-                <p>Resumen del segundo post...</p>
-            </article>
-            <!-- Añade más artículos aquí -->
-        </section>
-    </main>
+
+    <section>
+	    <h1>Blog</h1>
+    </section>
+
+    <main></main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"> </script>
+	<script>
+		const d = document,
+			$main = d.querySelector("main");
+		
+		fetch("blog/Post1.md")
+			.then(res => res.ok ? res.text() : Promise.reject(res))
+			.then(text => {
+				console.log(text);
+				const converter = new showdown.Converter();
+				$main.innerHTML = converter.makeHtml(text);
+				$main.innerHTML = `<div class="post-content">${html}</div>`;
+			})
+		
+			.catch(err => {
+			console.log(err);
+			let message = err.statusText||"Error";
+		$main.innerHTML = `Error ${err.status}: ${message}`;
+		})
+	</script>
+
 	<footer>
 		<p style="font-size:0.8em;">
 		Copyright 2024 JuanPendas license: 
