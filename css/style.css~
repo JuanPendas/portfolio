@@ -337,12 +337,14 @@ a:hover {
 .contactForm form input,
 .contactForm form textarea{
 	width: 100%;
+	resize: vertical;
 	padding: .7em;
 	border: none;
 	background: none;
 	border-bottom: 1px solid #ff914d;
 	margin-bottom: 20px;
 	color: #ffffff;
+	form-sizing: content;
 }
 
 .contactForm form button{
@@ -369,6 +371,19 @@ a:hover {
 	margin-left: 15%;
 	margin-right: 15%;
 	align-items: center;
+
+}
+
+.iconContainerNM{
+	display: flex;
+	margin-left: 0%;
+	margin-right: 5%;
+	align-items: center;
+
+}
+
+.iconContainerNM span{
+	margin-right: 2%;
 
 }
 

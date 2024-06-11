@@ -42,44 +42,16 @@
                         <div class="card-content">
                             <h3>Smart Road Infrastructure</h3>
 
-								<div class="iconContainer">
-									<div class="Arduino">
+								<div class="iconContainerNM">
 										<span class="simple-icons--arduino"></span>
-										<p>Arduino</p>
-									</div>
-									<div class="MQTT">
 										<span class="simple-icons--mqtt"></span>
-										<p>MQTT</p>
-									</div>
-								<div class="Adafruit">
-									<span class="simple-icons--adafruit"></span>
-									<p>Adafruit</p>
+										<span class="simple-icons--adafruit"></span>
 								</div>
-							</div>
                             <p class="pNoMargin">Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
                         </div>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="SRI.html">
-                        <img src="assets/img/projects/sri.png" alt="SRI" class="card-img">
-                        <div class="card-content">
-                            <h3>Smart Road Infrastructure</h3>
-                            <p class="pNoMargin">Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
-                        </div>
-                    </a>
-                </div>
-
-               	<div class="card">
-                    <a href="SRI.html">
-                        <img src="assets/img/projects/sri.png" alt="SRI" class="card-img">
-                       	<div class="card-content">
-                            <h3>Smart Road Infrastructure</h3>
-                            <p class="pNoMargin">Revolutionize roads with our Smart Infrastructure Monitoring System! Inductive sensors ensure real-time data for safer, smoother journeys.</p>
-                        </div>
-                    </a>
-           		 </div>
             </div>
 
             <h2>Blog:</h2>
