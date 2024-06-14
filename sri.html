@@ -55,7 +55,6 @@
 			<p>
 			This project was my purpose for <a href="https://www.hackster.io/contests/avriot"> Hackster</a> conquest. I decide to participate in this conquest, not looking forward the reward, I was looking to challenge myself and learn and also relearn microcontrollers programming.
 			</p>
-
 			<p>
 				Smart Road Infrastructure (SRI), was developed with the idea of an economic speck for road trafic monitoring. With very low cost, we can obtain real-time data on traffic flow, average speeds, and much more. In Europe, we have the European Data Project, which encompasses datasets from all European countries. Specifically, in Spain, cities like Madrid provide us with real-time traffic information. However, I believe that data acquisition could be improved, and that is my intention with this project: to make this technology accessible to more cities.
 			</p>
@@ -65,8 +64,45 @@
 				<li class="list">Madrid real-time traffic: <a href="https://informo.madrid.es/#/realtime?panel=live">https://informo.madrid.es/#/realtime?panel=live</a></li>
 			</ul>
 
+		<h2>Materials</h2>
+
 
 		<h2>Step-by-step</h2>
+		<p> Starting with the hardware, the conections are really simple, just follow the diagram: </p>
+		<div class="postImg">	
+			<img src="assets/img/projects/01-sri/sriSchematic.avif" alt="Imagen">
+		</div>
+		<p> You can also use a voltage regulable source as you can see in this photo.</p>
+		<div class="postImg">
+			<img src="assets/img/projects/01-sri/circuit.avif" alt="Imagen">
+		</div>
+		<p> In my case the toy car was made of plastic, if you know how inductor sensors works you will have already deduct that the sensor will not detect the toy car. To make the car detectable is important to modify it by puting some aluminium foil in the bottom as you can see in the image. </p>
+		<div class="postImg">
+			<img src="assets/img/projects/01-sri/toycar.avif" alt="Imagen">
+		</div>
+		<p> Now let's begin with the software. To use the celular conection you have to verify that you are in a region with LTE-M coverage from Truphone. Then you have to create your account <a href="https://www.truphone/connectit">Truphone</a> and activate your sim card.
+		<p> Next we have to upgrade the firmware. In this step you have to connect your board to the computer, but CAUTION! not all USB-type-C cables can be used for this purpose. There are USB-type-C cables that are only designed for charge, if we use those cables our computer will not detect the board. Once we have the board conectec to the computer we have to download the last version of the software an write it on our board. </p>
+		<p> Before to upload the code, you have to configure your Adafruit server, by introducing the detail in the beginning of the code as you can see. </p>
+
+		<p> I have configure my adafruit dashboard with a log and a graphic that show the cars per hour. I also add a temperature display.
+		</p>
+		<div class="postImg">
+			<img src="assets/img/projects/01-sri/adafruitDashboard.avif" alt="Imagen">
+		</div>
+		<p> Now you are free to upload the code and it should work. Just few considerations, the speed is only an estimation calculated by the average of cars lenght. In cars with largest wheelbase the speed will be lower than in cars with lower wheelbase, but for our requirements this doesn't affect to much. If the sensor detect a speed higher that 400 km/h, around 250 mph the sensor will send an error in measurement, however, this paremeter is compleatly cornfiiguerable.  </p>
+
+		<p>.  
+	
+	
+
+
+
+
+
+.
+	</p>		
+
+
 	</body>
 
 	<footer>
