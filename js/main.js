@@ -1,5 +1,5 @@
 docum9ddent.addEventListener('DOMContentLoaded', function() {
-	
+
 //	Cargar archivo
 	function loadFile(filePath) {
 		return fetch(filePath)
@@ -42,5 +42,22 @@ docum9ddent.addEventListener('DOMContentLoaded', function() {
 			        
 		})
 	        .catch(error => console.error('Error cargando los archivos:', error));
+
+	const navLinks = document.querySelectorAll(".navbar a");
+
+	navLinks.forEach(link => {
+		link.addEventListener("click", function(e){
+			e.preventDefault();
+			const targetId = this.getAttribute("href").substring(1);
+			const targetElement = document.getElementById(targetId);
+
+			window.scrollTo({
+				top: targetElement.offsetTop,
+				behavior: "smooth"
+			})
+		})
+	})
+
 });
+
 
