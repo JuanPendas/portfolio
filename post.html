@@ -27,37 +27,33 @@
 				<div class="line"></div>
 	</nav>
 
-	<div class="content">
     <main id="post-content">
 	</main>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"> </script>
 	<script>
-
-		const urlParams = new URLSearchParams(window.location.search);
-		const post-id = urlParams.get("id");
-		
-		const mdFile = post-id + ".md";
-
 		const d = document,
 			$main = d.querySelector("main");
 		
-		fetch("assets/blog/2024-06-21.md")
-			.then(res => res.ok ? res.text() : Promise.reject(res))
-			.then(text => {
-				console.log(text);
-				const converter = new showdown.Converter();
-				$main.innerHTML = converter.makeHtml(text);
-			})
-		
-			.catch(err => {
-			console.log(err);
-			let message = err.statusText||"Error";
-		$main.innerHTML = `Error ${err.status}: ${message}`;
-		})
-	</script>
-	</div>
 
+		const urlParams = new URLSearchParams(window.location.search);
+		const postId = urlParams.get("id");
+		console.log("Valor ID: ",postId);
+
+			const mdFile = `assets/blog/${postId}.md`;
+		fetch(mdFile)
+			.then(res => res.ok ? res.text() : Promise.reject(res))
+				.then(text =>{
+					$main.innerHTML = new showdown.Converter().makeHtml(text);
+				})
+				.catch(err =>{
+					console.log(err);
+					let message = err.statusText||"No se ha podido cargar el post";
+					$main.innerHTML = `Error${err.status}:${err.message}`;
+				})
+
+		
+	</script>
 </body>
 	<iframe class="addHTML" src="assets/htmlTemplates/footer.html"></iframe>
 </html>
