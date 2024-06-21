@@ -28,13 +28,21 @@
 	</nav>
 
 	<div class="content">
-    <main></main>
+    <main id="post-content">
+	</main>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"> </script>
 	<script>
+
+		const urlParams = new URLSearchParams(window.location.search);
+		const post-id = urlParams.get("id");
+		
+		const mdFile = post-id + ".md";
+
 		const d = document,
 			$main = d.querySelector("main");
 		
-		fetch("assets/blog/Post1.md")
+		fetch("assets/blog/2024-06-21.md")
 			.then(res => res.ok ? res.text() : Promise.reject(res))
 			.then(text => {
 				console.log(text);
