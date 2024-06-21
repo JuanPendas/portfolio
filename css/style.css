@@ -279,6 +279,26 @@ img{
 	justify-content: center;
 }
 
+.downloadButton {
+	margin-left: 15%;
+	height: 50px;
+	background: #cc743e;
+	width: 15%;
+	align-content: center;
+
+}
+
+.downloadButton:hover {
+	background: #161616;
+	background: #ff914d;
+}
+
+.downloadButton p{
+	color: #ffffff;
+	text-transform: bold;
+	text-transform: uppercase;
+}
+
 /* Cards para los proyectos */
 .card-container {
     display: grid;
