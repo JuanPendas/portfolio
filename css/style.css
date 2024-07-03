@@ -171,7 +171,17 @@ h1 {
 
 h2 {
     font-size: 26px;
-    color: #ffffff;
+    color: #e96e21;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: fira code, monospace;
+    font-style: bold;
+}
+
+h3 {
+    font-size: 18px;
+    color: #999;
     margin-left: 15%;
     margin-bottom: 10px;
     margin-top: 10px;
