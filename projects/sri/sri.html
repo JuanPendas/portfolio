@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Juan Pendas </title>
+		<link rel="stylesheet" href="../../../css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+	<nav>
+		<input type="checkbox" id="toggle">
+			<div class="logo">
+				<a href="../../../index.html">
+					<img src="..\..\img\xpi.png" alt="logo" width="65">
+				</a>
+			</div>
+				
+			<u1 class="list">
+				<li><a href="..\..\..\index.html">Home</a></li>
+				<li><a href="#">Projectos</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contacto</a></li>
+			</u1>
+			<label for="toggle" class="icon-bars">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+	</nav>
+		<h1>Smart Road Infrastructure</h1>
+			<p>
+			Revoluciona las carreteras con Smart Road Infrastructure! Un sistema de monitorización de tráfico en tiempo real económico.
+			</p>
+
+		<h2>Tecnologías usadas:</h2>
+			<div class="iconContainer">
+				<div class="Arduino">
+					<span class="simple-icons--arduino"></span>
+					<p>Arduino</p>
+				</div>
+				<div class="MQTT">
+					<span class="simple-icons--mqtt"></span>
+					<p>MQTT</p>
+				</div>
+				<div class="Adafruit">
+					<span class="simple-icons--adafruit"></span>
+					<p>Adafruit</p>
+				</div>
+			</div>
+		<h2>Motivación</h2>
+			<p>
+			Este proyecto fué mi propuesta para un concurso de <a href="https://www.hackster.io/contests/avriot"> hackster</a>. Decidí participar en este concurso para retarme a mí mismo y conocer la metodología de estos. A la hora de redactar mi propuesta era consciente de mi desconocimiento en ciertas tecnologías, pues nunca había trabajado con MGTT o Adafruit, pero aproveche para tomar este reto como una oportunidad. 
+			</p>
+			<p>
+			Smart Road Infrastructure (SRI), pretende ser una solución económica para la monitorización del tráfico. Permite obtener datos del tráfico en tiempo real gracias a sensores inductivos. En Europa existe el European Data Project, donde se organizan datos de todo tipo, entre ellos del tráfico. A nivel nacional, Madrid lidera la monitorización del tráfico. Sin embargo, otras ciudades españolas no se pueden permitir esos sistemas de monitorización. Bajo este marco decidí crear un sistema realmente económico, que puedan permitirse ciudades con menos recursos, y por encima de todo que trate los datos de forma anónima y segura.
+			</p>
+
+			<ul>
+				<li class="list">European data project: <a href="https://data.europa.eu/en">https://data.europa.eu/en</a></li>
+				<li class="list">Madrid tráfico en tiempo real: <a href="https://informo.madrid.es/#/realtime?panel=live">https://informo.madrid.es/#/realtime?panel=live</a></li>
+			</ul>
+
+		<h2>Materiales</h2>
+			<ul>
+				<li class="list"> Avr-iot cellular mini</li>
+				<li class="list"> Sensor inductivo</li>
+				<li class="list"> Coche de juguete</li>
+				<li class="list"> Fuente de alimentación</li>
+			</ul>
+
+		<h2>Step-by-step</h2>
+		<p> Empezando por el hardware, el circuito debe seguir el siguiente diagrama: </p>
+		<div class="postImg">	
+			<img src="../../img/projects/01-sri/sriSchematic.avif" alt="Imagen">
+		</div>
+		<p> En mi caso yo he utilizado una fuente de tensión regulable</p>
+		<div class="postImg">
+			<img src="../../img/projects/01-sri/circuit.avif" alt="Imagen">
+		</div>
+		<p> Dado que este proyecto se trata de un prototipo, las medidas se harán con un coche de juguete, pero dado que la parte inferior de este es de plástico será necesario pegar un poco de papel de aluminio para que el sensor inductivo funcione.</p>
+		<div class="postImg">
+			<img src="../../img/projects/01-sri/toycar.avif" alt="Imagen">
+		</div>
+		<p> Ahora vamos con el software. Para usar la conexión LTE, en el caso de usar la tarjeta SIM que incluye nuestra placa, es necesario registrarse en la web de <a href="https://www.truphone.com/">Truphone</a> y activar la tarjeta.</p>
+		<p> Lo siguiente será actualizar el firmware, en este paso tienes que conectar tu placa al ordenador con un USB tipo C, pero ten en cuenta que el cable debe permitir el paso de datos, pues hay cables tipo C que solo permiten carga de dispositivos, y si se usa uno de estos cables nuestro ordenador no detectará la placa. Una vez conectada podemos descargarnos el firmware de la <a href="https://iot.microchip.com/avr-iot-cellular-mini">página del fabricante.</a> </p>
+
+		<p> Antes de subir el código vamos a configurar el servidor de Adafruit. El primer paso es crearse una cuenta si aún no tienes una. Una vez registrado accede al menú IO, y a continuación a dashboard. Aquí puedes personalizar el dashboard en función de tus preferencias. En mi caso he decidido poner un log para monitorizar en todo momento el funcionamiento del sistema. En segundo lugar un elemento gráfica para mostrar el número de coches en función del tiempo. Por último un bloque que muestre la temperatura por si se detectara una subida preocupante de esta parar el sistema.</p>
+		<div class="postImg">
+			<img src="../../img/projects/01-sri/adafruitDashboard.avif" alt="Imagen">
+		</div>
+		<p> Antes de subir el código utilizando el IDE de Arduino debes realizar unos pequeños ajustes. En las primeras líneas de código debes poner tanto tu usuario de Adafruit, como la key del servidor que has creado. Esta key se genera de forma automática, no es la contraseña de tu cuenta.</p>
+		<p> Ahora toca configurar el IDE de Arduino para poder cargar el código en la placa.
+
+		<h2> Recursos </h2>
+		<p> Enlace de descarga del código: </p>
+
+		<a download="arduino_code.ino" href="assets/projects/sri/arduino_code.ino" class="btn">
+			Descargar código
+		</a>
+</body>
+
+	<iframe class="addHTML" src="../../htmlTemplates/footer.html"></iframe>
+</html>

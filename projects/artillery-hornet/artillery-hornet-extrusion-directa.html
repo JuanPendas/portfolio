@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Juan Pendas </title>
+		<link rel="stylesheet" href="../../../css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<nav>
+			<input type="checkbox" id="toggle">
+				<div class="logo">
+					<a href="../../../index.html">
+						<img src="..\..\img\xpi.png" alt="logo" width="65">
+					</a>
+				</div>
+					
+				<u1 class="list">
+					<li><a href="../../../index.html">Home</a></li>
+					<li><a href="#">Projectos</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contacto</a></li>
+				</u1>
+				<label for="toggle" class="icon-bars">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+		</nav>
+		
+		<h1>Extrusión directa Artillery Hornet</h1>
+			<p>
+				En esta publicación, voy a detallar mi proceso completo al armar y adaptar la impresora 3D Artillery Hornet con un sistema de extrusión directa. Voy a hablar sobre los obstáculos que surgieron y las respuestas que se aplicaron, desde la selección de los componentes hasta la configuración definitiva. Este viaje no solo muestra las capacidades de la Artillery Hornet, sino que también da sugerencias útiles a los amantes de la impresión 3D que quieran aumentar su calidad de impresión. Ven conmigo en este recorrido de inventiva y técnica, y aprende cómo elevar tu impresión 3D a un nivel superior.
+			</p>
+
+		<h2>Tecnologías usadas:</h2>
+			<div class="iconContainer">
+				<div class="Adafruit">
+					<p>Marlin</p>
+				</div>
+			</div>
+		<h2>Motivación</h2>
+			<p>
+				Desde que compré esta impresora hace dos años, no me limité solo a imprimir. Busqué experimentar probobando sistemas que permitían la impresión en varios colores, entre ellos el proyecto <a href="https://github.com/Sakati84/3DPrintColorizer"> 3DPrintColorizer</a>. Sin embargo, llega un punto en el que en vez de imitar otras ideas, deseas crear la tuya propia y documentar el proceso.
+			</p>
+			
+			<p>
+				Mi experiencia con esta impresora siempre ha sido bastante agradable, excepto por los atascos. El hecho de que la alimentación del bloque calentador y el filamento estén unidos, dificulta bastante la limpieza de los atascos, y desafortunadamente, es una máquina bastante propensa a estos. 
+				En suma a este hecho, para un proyecto necesitaba imprimir TPU, y es bastante recomendado imprimir los filamentos flexibles con una impresora de extrusión directa. Busqué en varias comunidades destinadas a esta impresora, pero no encontré nadie hubiera decidido realiazar un proyecto similar. Por eso estoy escribiendo este post para documentar mi trabajo, que si bien el proceso es bastante sencillo, de primeras puede asustar los cambios que de deben realizar.
+			</p>
+
+			
+
+		<h2>Materiales</h2>
+			<ul>
+				<li class="list"> Artillery Hornet</li>
+				<li class="list"> <a href="https://es.aliexpress.com/item/1005005807165153.html?spm=a2g0o.order_list.order_list_main.16.13fd194dLn4ITj&gatewayAdapt=glo2esp">Kit extrusión directa</a></li>
+				<li class="list"> Alcohol isopropílico</li>
+				<li class="list"><a href="https://www.amazon.es/3DPLady-cables-XH2-54-impresora-motores/dp/B094DS918J/ref=sr_1_2?sr=8-2"> Cables para motores paso a paso</a></li>
+				<li class="list"> <a href="https://www.amazon.es/Preciva-Crimpadora-Compatible-conectores-30-20AWG/dp/B0CH37171Q/?_encoding=UTF8&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d"> Crimpadora (Opcional)</a></li>
+			</ul>
+
+		<h2>Step-by-step</h2>
+			<h3> 0. Imprimir adaptadores</h3>
+			<p>
+				He decidido nombrar a este paso como paso 0 ya que, pese a que en mi caso lo reailé en último lugar, esto debido a que necesitaba el nuevo sistema montado para tomar medidas, es altamente recomentable realizarlo previa cualquier modificación. 
+			</p>
+
+			<p>
+				Deberán imprimirse las dos piezas cuyos archivos stl pueden descargase a continuación. Estas piezas permiten ajustar los finales de carrera de los ejes Y y Z al nuevo extrusor.
+
+			<h3> 1. Desconectar los cables</h3>
+			<p>
+				Ahora si, el primer paso, consistirá en desconectar los cables de los ejes Y, Z, E; los finales de carrera y los ventiladores. Si bien es fácil desconectar los cables de los motores, no es igual de fácil desconectar estos de la placa controladora, pues estos están recubiertos de silicona caliente.
+			</p>
+			<p>
+				El mejor método que he encontrado para remover este pegamento termofusible consiste en empapar un bastoncillo de los oídos en alcohol isopropílico y con él aplicar alcohol en las uniones entre el pegamento y el plástico.
+				Después de aplicarlo suele desprenderse fácilmente al tirar con una pinzas con un poco de cuidado. Con algo de paciencia se eliminará la mayor parte de la silicona y os permitirá desconectar los cables.
+			</p>
+
+			<h3> 2. Cambiar el extrusor</h3>
+			<p>
+				Para desmontar el extrusor antiguo deberemos quitar los tornillos que se muestran en las imagenes a continuación.
+			</p>
+
+			<p>
+				Para montar el nuevo extrusor podéis ayudaros del siguiente diagrama.
+			</p>
+
+			<h3> 3. Conectar los nuevos cables</h3>
+			<p>
+				En este punto es conce más dificultades he encontrado, por tanto recomiento tener bastante cuidado. En primer lugar, quiero destacar que si buscais un resultado profesional como el que se ve en las fotos será necesaria una crimpadora para conectores XH. No obstante, podeis lograr un resultado igual de efectivo sin ella. En el caso de que tengais que cambiar la posición de dos cables en uno de los conectores debereis echar mano de unas pinzas y un poco de maña.
+			</p>
+
+			<p>
+				Debeis seguir el esquema de conexionado que se adjunta. En el caso de que alguno de los motores gire en dirección opuesta a la que debería podeis cambiar este comportamiento cambiando los cables () o cambiando la configuración de Marlin.
+			</p>
+
+			<h3> 4. Ajustar los pasos del nuevo extrusor</h3>
+			<p>
+				Por último será necesario ajustar los pasos del motor. Esto de nuevo puede hacerse configurando Marlin pero no es necesario ya que también se puede ajustar desde la propia impresora. Para ello nos vamos a "home/configuración/configuración avanzada/steps". El valor del motor E debería estar en torno a los 400, y deberemos bajarlo en torno a 100.
+			</p>
+
+			<p>
+				Una vez en 100 mediremos 10 cm en el filamento, extruiremos 10 cm y mediremos la diferencia. Aplicando  una simple regla de tres obtendremos el valor exacto de los pasos, introducimos este y nos aseguramos de guardar el valor para que no se pierda al apagar la impresora.
+			</p>
+		<h2> Recursos </h2>
+	</body>
+
+	<iframe class="addHTML" src="../../htmlTemplates/footer.html"></iframe>
+</html>
