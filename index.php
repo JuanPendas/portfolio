@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['Message']);
 
     // Configura el correo electrónico
-    $to = "contact@juanpendas.com"; 
+    $to = "contact@juanpendas.com"; // Reemplaza con tu dirección de correo
     $subject = "Nuevo mensaje de contacto";
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .
@@ -17,10 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Envía el correo
     if (mail($to, $subject, $body, $headers)) {
-        $message_sent = true;
+        echo json_encode(["status" => "success", "message" => "Mensaje enviado con éxito."]);
     } else {
-        $message_sent = false;
+        echo json_encode(["status" => "error", "message" => "Hubo un problema al enviar el mensaje."]);
     }
+    exit;
 }
 ?>
 
@@ -149,34 +150,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</section>
 
             <section id="Contacto">
-                <h2>Contacto:</h2>
-                <div class="contactForm">
-                    <form action="" method="post">
-                        <p class="pNoMargin">
-                            <label>Nombre</label>
-                            <input type="text" name="Name" required>
-                        </p>
-                        <p class="pNoMargin">
-                            <label>Email</label>
-                            <input type="email" name="Email" required>
-                        </p>
-                        <p class="block">
-                            <label>Mensaje</label>
-                            <textarea name="Message" rows="3" required></textarea>
-                        </p>
-                        <p class="block">
-                            <button type="submit">Enviar</button>
-                        </p>
-                    </form>
-                    <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
-                        <?php if ($message_sent): ?>
-                            <div class="success">Mensaje enviado con éxito.</div>
-                        <?php else: ?>
-                            <div class="error">Hubo un problema al enviar el mensaje.</div>
-                        <?php endif; ?>
-                    <?php endif; ?>
-                </div>
-            </section>     
+            <h2>Contacto:</h2>
+            <div class="contactForm">
+                <form id="contactForm" method="post">
+                    <p class="pNoMargin">
+                        <label>Nombre</label>
+                        <input type="text" name="Name" required>
+                    </p>
+                    <p class="pNoMargin">
+                        <label>Email</label>
+                        <input type="email" name="Email" required>
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="Message" rows="3" required></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+        </section>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Previene el comportamiento por defecto del formulario
+                
+                const formData = new FormData(this);
+
+                fetch('', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const messageDiv = document.getElementById('formMessage');
+                    if (data.status === 'success') {
+                        messageDiv.innerHTML = `<div class="success">${data.message}</div>`;
+                    } else {
+                        messageDiv.innerHTML = `<div class="error">${data.message}</div>`;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('formMessage').innerHTML = `<div class="error">Hubo un error al enviar el mensaje.</div>`;
+                });
+            });
+        </script>    
 
 	<script src="js/main.js"></script>
     </body>
