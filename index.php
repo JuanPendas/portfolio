@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="vContainer">
                 <h1 class="JP">
                     Juan Pendás
-                    <p class="par">Electronical Engineer & Attempt of Entrepreneur.</p>
+                    <p class="par"><b>Electronical Engineer & Attempt of Entrepreneur.<b></p>
                 </h1>
                 <img src="assets/img/ProfilePhoto.png" alt="profile-photo" width="200px" class="Profilephoto">
             </div>
