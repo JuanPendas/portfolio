@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </a>
                 </div>
                 <div class="card">
-                    <a href="assets/projects/artillery-hornet/artillery-hornet-extrusion-directa.html">
+                    <a href="projects/artillery-hornet/artillery-hornet-extrusion-directa.html">
                         <img src="assets/img/WorkInProgress02.png" alt="SRI" class="card-img">
                         <div class="card-content">
                             <h3>Artillery Hornet extrusión directa</h3>
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </a>
                 </div>
                 <div class="card">
-                    <a href="assets/projects/sri/sri.html">
+                    <a href="projects/sri/sri.html">
                         <img src="assets/img/projects/sri.png" alt="SRI" class="card-img">
                         <div class="card-content">
                             <h3>Smart Road Infrastructure</h3>
