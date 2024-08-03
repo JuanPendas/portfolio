@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Otros proyectos:</h2>
             <div class="card-container">
                 <div class="card">
-                    <a href="sri.html">
+                    <a href="">
                         <img src="assets/img/WorkInProgress03.png" alt="SRI" class="card-img">
                         <div class="card-content">
                             <h3>En desarrollo</h3>
