@@ -193,7 +193,12 @@ p {
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-bottom: 10px;
+    font-size: 18px;
 	color: #ffffff;
+}
+
+b {
+	color: #e96e21;
 }
 
 .pNoMargin{
