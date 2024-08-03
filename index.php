@@ -187,13 +187,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 .then(data => {
                     const messageDiv = document.getElementById('formMessage');
                     if (data.status === 'success') {
-                        messageDiv.innerHTML = `<div class="success">${data.message}</div>`;
+                        messageDiv.innerHTML = `<div class="success"><p>${data.message}</p></div>`;
                     } else {
-                        messageDiv.innerHTML = `<div class="error">${data.message}</div>`;
+                        messageDiv.innerHTML = `<div class="error"><p>${data.message}</p></div>`;
                     }
                 })
                 .catch(error => {
-                    document.getElementById('formMessage').innerHTML = `<div class="error">Hubo un error al enviar el mensaje.</div>`;
+                    document.getElementById('formMessage').innerHTML = `<div class="error"><p>Hubo un error al enviar el mensaje.</p></div>`;
                 });
             });
         </script>    
