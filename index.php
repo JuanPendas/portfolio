@@ -149,36 +149,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</section>
 
             <section id="Contacto">
-        <h2>Contacto:</h2>
-        <div class="contactForm">
-            <form action="" method="post">
-                <p class="pNoMargin">
-                    <label>Nombre</label>
-                    <input type="text" name="Name" required>
-                </p>
-                <p class="pNoMargin">
-                    <label>Email</label>
-                    <input type="email" name="Email" required>
-                </p>
-                <p class="block">
-                    <label>Mensaje</label>
-                    <textarea name="Message" rows="3" required></textarea>
-                </p>
-                <p class="block">
-                    <button type="submit">Enviar</button>
-                </p>
-            </form>
-            <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
-                <?php if ($message_sent): ?>
-                    <div class="success">Mensaje enviado con éxito.</div>
-                <?php else: ?>
-                    <div class="error">Hubo un problema al enviar el mensaje.</div>
-                <?php endif; ?>
-            <?php endif; ?>
-        </div>
-    </section>
-            
-
+                <h2>Contacto:</h2>
+                <div class="contactForm">
+                    <form action="" method="post">
+                        <p class="pNoMargin">
+                            <label>Nombre</label>
+                            <input type="text" name="Name" required>
+                        </p>
+                        <p class="pNoMargin">
+                            <label>Email</label>
+                            <input type="email" name="Email" required>
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="Message" rows="3" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                    <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
+                        <?php if ($message_sent): ?>
+                            <div class="success">Mensaje enviado con éxito.</div>
+                        <?php else: ?>
+                            <div class="error">Hubo un problema al enviar el mensaje.</div>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </div>
+            </section>     
 
 	<script src="js/main.js"></script>
     </body>
