@@ -122,34 +122,29 @@
                 </a>
 			</section>
 
-			<section id="Contacto">
-            <h2>Contacto:</h2>
-			<div class="contactForm">
-				<form action="">
-					<p class="pNoMargin">
-						<label>Nombre</label>
-						<input type="text" name="Name">
-					</p>
-				
-					<p class="pNoMargin">
-						<label>Email</label>
-						<input type="email" name="Email">
-					</p>
-				
-					<p class="block">
-						<label>Mensaje</label>
-						<textarea name="Message" rows="3"></textarea>
-					</p>
-
-					<p class="block">
-						<button type="submit">
-							Enviar
-						</button>
-					</p>
-				</form>
-        	</div>
-			
-			</section>
+            <section id="Contacto">
+                <h2>Contacto:</h2>
+                <div class="contactForm">
+                    <form action="contact.php" method="post">
+                        <p class="pNoMargin">
+                            <label>Nombre</label>
+                            <input type="text" name="Name" required>
+                        </p>
+                        <p class="pNoMargin">
+                            <label>Email</label>
+                            <input type="email" name="Email" required>
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="Message" rows="3" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            
 
 
 	<script src="js/main.js"></script>
