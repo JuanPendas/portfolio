@@ -71,22 +71,22 @@
 		<h2>Step-by-step</h2>
 		<p> Empezando por el hardware, el circuito debe seguir el siguiente diagrama: </p>
 		<div class="postImg">	
-			<img src="../../img/projects/01-sri/sriSchematic.avif" alt="Imagen">
+			<img src="../../assets/img/projects/01-sri/sriSchematic.avif" alt="Imagen">
 		</div>
 		<p> En mi caso yo he utilizado una fuente de tensión regulable</p>
 		<div class="postImg">
-			<img src="../../img/projects/01-sri/circuit.avif" alt="Imagen">
+			<img src="../../assets/img/projects/01-sri/circuit.avif" alt="Imagen">
 		</div>
 		<p> Dado que este proyecto se trata de un prototipo, las medidas se harán con un coche de juguete, pero dado que la parte inferior de este es de plástico será necesario pegar un poco de papel de aluminio para que el sensor inductivo funcione.</p>
 		<div class="postImg">
-			<img src="../../img/projects/01-sri/toycar.avif" alt="Imagen">
+			<img src="../../assets/img/projects/01-sri/toycar.avif" alt="Imagen">
 		</div>
 		<p> Ahora vamos con el software. Para usar la conexión LTE, en el caso de usar la tarjeta SIM que incluye nuestra placa, es necesario registrarse en la web de <a href="https://www.truphone.com/">Truphone</a> y activar la tarjeta.</p>
 		<p> Lo siguiente será actualizar el firmware, en este paso tienes que conectar tu placa al ordenador con un USB tipo C, pero ten en cuenta que el cable debe permitir el paso de datos, pues hay cables tipo C que solo permiten carga de dispositivos, y si se usa uno de estos cables nuestro ordenador no detectará la placa. Una vez conectada podemos descargarnos el firmware de la <a href="https://iot.microchip.com/avr-iot-cellular-mini">página del fabricante.</a> </p>
 
 		<p> Antes de subir el código vamos a configurar el servidor de Adafruit. El primer paso es crearse una cuenta si aún no tienes una. Una vez registrado accede al menú IO, y a continuación a dashboard. Aquí puedes personalizar el dashboard en función de tus preferencias. En mi caso he decidido poner un log para monitorizar en todo momento el funcionamiento del sistema. En segundo lugar un elemento gráfica para mostrar el número de coches en función del tiempo. Por último un bloque que muestre la temperatura por si se detectara una subida preocupante de esta parar el sistema.</p>
 		<div class="postImg">
-			<img src="../../img/projects/01-sri/adafruitDashboard.avif" alt="Imagen">
+			<img src="../../assets/img/projects/01-sri/adafruitDashboard.avif" alt="Imagen">
 		</div>
 		<p> Antes de subir el código utilizando el IDE de Arduino debes realizar unos pequeños ajustes. En las primeras líneas de código debes poner tanto tu usuario de Adafruit, como la key del servidor que has creado. Esta key se genera de forma automática, no es la contraseña de tu cuenta.</p>
 		<p> Ahora toca configurar el IDE de Arduino para poder cargar el código en la placa.
@@ -94,10 +94,10 @@
 		<h2> Recursos </h2>
 		<p> Enlace de descarga del código: </p>
 
-		<a download="arduino_code.ino" href="assets/projects/sri/arduino_code.ino" class="btn">
+		<a download="arduino_code.ino" href="../../assets/projects/sri/arduino_code.ino" class="btn">
 			Descargar código
 		</a>
 </body>
 
-	<iframe class="addHTML" src="../../htmlTemplates/footer.html"></iframe>
+	<iframe class="addHTML" src="../../assets/htmlTemplates/footer.html"></iframe>
 </html>
