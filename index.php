@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="card">
                         <a href="puzles/mirror-petal-column.html">
-                            <img src="assets/img/WorkInProgress01.png" alt="" class="card-img">
+                            <img src="assets/puzles/MPC/MPC.jpg" alt="" class="card-img">
                             <div class="card-content">
                                 <h3>Mirror Petal Column</h3>
                                 <p class="pNoMargin"></p>
