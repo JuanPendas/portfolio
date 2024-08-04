@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     Juan Pendás
                     <p class="par"><b>Electronical Engineer & Attempt of Entrepreneur.<b></p>
                 </h1>
-                <img src="assets/img/ProfilePhoto.png" alt="profile-photo" width="200px" class="Profilephoto">
+                <img src="assets/img/ProfilePhoto.png" alt="profile-photo" width="400px" class="Profilephoto">
             </div>
 
             <section id="Rompecabezas">
