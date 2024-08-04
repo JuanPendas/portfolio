@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="card-container">
                     <div class="card">
                         <a href="404.html">
-                            <img src="assets/img/WorkInProgress02.png" alt="" class="card-img">
+                            <img src="assets/img/WorkInProgress01.png" alt="" class="card-img">
                             <div class="card-content">
                                 <h3></h3>
                                 <p class="pNoMargin"></p>
@@ -81,20 +81,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </a>
                     </div>
                     <div class="card">
-                        <a href="puzles/mirror-petal-column.html">
-                            <img src="assets/puzles/MPC/MPC.jpg" alt="" class="card-img">
+                        <a href="puzles/ghost-petal-column.html">
+                            <img src="assets/img/puzzles/ghost-petal-column.png" alt="" class="card-img">
                             <div class="card-content">
-                                <h3>Mirror Petal Column</h3>
+                                <h3>Ghost Petal Column</h3>
                                 <p class="pNoMargin"></p>
 
                             </div>
                         </a>
                     </div>
                     <div class="card">
-                        <a href="puzles/ghost-petal-column.html">
-                            <img src="assets/img/puzzles/ghost-petal-column.png" alt="" class="card-img">
+                        <a href="puzles/mirror-petal-column.html">
+                            <img src="assets/puzles/MPC/MPC.jpg" alt="" class="card-img">
                             <div class="card-content">
-                                <h3>Ghost Petal Column</h3>
+                                <h3>Mirror Petal Column</h3>
                                 <p class="pNoMargin"></p>
 
                             </div>
