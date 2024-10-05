@@ -65,7 +65,7 @@ nav .list a {
 }
 
 nav .list a:hover {
-    border-bottom: 4px solid #ff914d;
+    border-bottom: 4px solid #e96e21;
 }
 
 #toggle {
@@ -291,7 +291,7 @@ footer, p {
 }
 
 a {
-    color: #ff914d;
+    color: #e96e21;
 	text-decoration: none;
 }
 
@@ -332,7 +332,7 @@ img{
 
 .downloadButton:hover {
 	background: #161616;
-	background: #ff914d;
+	background: #e96e21;
 }
 
 .downloadButton p{
@@ -413,7 +413,7 @@ img{
 	position: absolute;
 	width: var(--wth);
 	height: 100%;
-	background: #ff914d;
+	background: #e96e21;
 }
 
 
@@ -449,7 +449,7 @@ img{
 	padding: .7em;
 	border: none;
 	background: none;
-	border-bottom: 1px solid #ff914d;
+	border-bottom: 1px solid #e96e21;
 	margin-bottom: 20px;
 	color: #ffffff;
 	form-sizing: content;
@@ -468,7 +468,7 @@ img{
 
 .contactForm form button:hover,
 .contactForm form button:focus{
-	background: #ff914d;
+	background: #e96e21;
 }
 
 

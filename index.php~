@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="card-container">
 
                     <div class="card">
-                        <a href="puzles/mirror-puck.html">
+                        <a href="puzles/ghost-petal-column.html">
                             <img src="assets/puzles/GPC/GPC.png" alt="" class="card-img">
                             <div class="card-content">
                                 <h3>Ghost Petal Column</h3>
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </a>
                     </div>
                     <div class="card">
-                        <a href="puzles/mirror-puck.html">
+                        <a href="puzles/mirror-petal-column.html">
                             <img src="assets/puzles/MPC/MPC.png" alt="" class="card-img">
                             <div class="card-content">
                                 <h3>Mirror Petal Column</h3>
