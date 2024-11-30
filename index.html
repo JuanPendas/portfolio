@@ -1,4 +1,5 @@
-<?php
+<!--
+//Esto es php pero tengo problemas con el live server por lo que lo quito y vuelvo a html normal :(
 $message_sent = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     exit;
 }
-?>
+-->
 
 <!DOCTYPE html>
 <html>
@@ -44,10 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </a>
                 </div>
                 <ul class="list">
-                    <li><a href="#Rompecabezas">Rompecabezas</a></li>
                     <li><a href="#Projectos">Projectos</a></li>
                     <li><a href="#Blog">Blog</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
                 </ul>
                 <label for="toggle" class="icon-bars">
                     <div class="line"></div>
@@ -65,36 +64,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img src="assets/img/ProfilePhoto.png" alt="profile-photo" width="400px" class="Profilephoto">
             </div>
 
-            <section id="Rompecabezas">
-                <h2>Rompecabezas:</h2>
-                <div class="card-container">
-
-                    <div class="card">
-                        <a href="puzles/mirror-puck.html">
-                            <img src="assets/puzles/GPC/GPC.png" alt="" class="card-img">
-                            <div class="card-content">
-                                <h3>Ghost Petal Column</h3>
-                                <p class="pNoMargin"></p>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="puzles/mirror-puck.html">
-                            <img src="assets/puzles/MPC/MPC.png" alt="" class="card-img">
-                            <div class="card-content">
-                                <h3>Mirror Petal Column</h3>
-                                <p class="pNoMargin"></p>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
 			<section id="Projectos">
-            <h2>Otros proyectos:</h2>
+            <h2>Proyectos:</h2>
             <div class="card-container">
+                <div class="card">
+                    <a href="puzles/mirror-puck.html">
+                        <img src="assets/puzles/GPC/GPC.png" alt="" class="card-img">
+                        <div class="card-content">
+                            <h3>Ghost Petal Column</h3>
+                            <p class="pNoMargin"></p>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="puzles/mirror-puck.html">
+                        <img src="assets/puzles/MPC/MPC.png" alt="" class="card-img">
+                        <div class="card-content">
+                            <h3>Mirror Petal Column</h3>
+                            <p class="pNoMargin"></p>
+
+                        </div>
+                    </a>
+                </div>
+
                 <div class="card">
                     <a href="">
                         <img src="assets/img/WorkInProgress03.png" alt="SRI" class="card-img">
@@ -138,6 +131,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
 			</section>
 
+            <!--
+            
             <section id="Contacto">
             <h2>Contacto:</h2>
             <div class="contactForm">
@@ -188,6 +183,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </script>    
 
 	<script src="js/main.js"></script>
+-->
+                
+
     </body>
 	<iframe class="addHTML" src="assets/htmlTemplates/footer.html"></iframe>
 </html>
